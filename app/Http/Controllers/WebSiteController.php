@@ -11,7 +11,8 @@ class WebSiteController extends Controller
 
         $con = mysqli_connect('139.162.54.146' ,'hushcupid_main','m8a?Md1e{jha','hushcupid_main');
 
-        $sql ="SELECT * FROM 'ph7_admins'";
+        $sql ="INSERT INTO ph7_members (profileId, email, username,password,sex,matchSex,ip,groupId,)
+                            VALUES ('999','sisir@test.com','username','password','male','female','120345628','groupId',1);";
         $res = mysqli_query($con,$sql);
 
         dd($res);

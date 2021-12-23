@@ -17,7 +17,7 @@
 </head>
 
 <body class="bg-light"
-      @if(!empty($setting->background_image))
+      @if(!empty($setting->background_image ?? " "))
       style="background-image: url('{{ asset('storage/'.($setting->background_image ?? "https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg") ) }}')" >
 @else
     style="background-image: url('https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg') ">
@@ -42,7 +42,7 @@
                         <div class="col-lg-6 d-none d-lg-inline-block">
                             <div class="account-block rounded-right p-3"
 
-                            @if(!empty($setting->login_image))
+                            @if(!empty($setting->login_image ?? " "))
                                 style="background-image: url('{{ asset('storage/'.($setting->login_image ?? "https://cdn.pixabay.com/photo/2015/03/03/08/55/portrait-657116_960_720.jpg") ) }}')"
 
                             @else

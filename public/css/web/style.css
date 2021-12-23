@@ -1,6 +1,6 @@
 body{
     margin-top:20px;
-    background-image: url("https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg");
+    /*background-image: url($setting->background ?? "https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg");*/
     background-size: cover;
     background-position: center center;
     /*overflow: hidden;*/
@@ -12,7 +12,7 @@ input[type=text]:focus {
 }
 .account-block {
     padding: 0;
-    background-image: url(https://cdn.pixabay.com/photo/2015/03/03/08/55/portrait-657116_960_720.jpg);
+    /*background-image: url(https://cdn.pixabay.com/photo/2015/03/03/08/55/portrait-657116_960_720.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;

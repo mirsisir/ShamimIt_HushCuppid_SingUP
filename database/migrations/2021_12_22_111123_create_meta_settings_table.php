@@ -15,8 +15,12 @@ class CreateMetaSettingsTable extends Migration
     {
         Schema::create('meta_settings', function (Blueprint $table) {
             $table->id();
-            $table->text('name');
-            $table->text('value');
+            $table->text('website_name')->nullable();
+            $table->text('background_image')->nullable();
+            $table->text('login_image')->nullable();
+            $table->text('logo')->nullable();
+            $table->text('title')->nullable();
+            $table->text('sub_title')->nullable();
             $table->timestamps();
         });
     }

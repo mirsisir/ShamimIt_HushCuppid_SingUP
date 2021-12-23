@@ -16,8 +16,13 @@
 
 </head>
 
-<body class="bg-light" style="background-image: url('{{ asset('storage/'.$setting->background_image ?? "https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg" ) }}')" >
+<body class="bg-light"
+      @if(!empty($setting->background_image))
+      style="background-image: url('{{ asset('storage/'.($setting->background_image ?? "https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg") ) }}')" >
+@else
+    style="background-image: url('https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg') ">
 
+@endif
 <div class="">
     <div class="container ">
         <img src="https://www.hushcupid.com/templates/themes/base/img/logo.png" alt="s" width="70px">
@@ -35,7 +40,16 @@
                 <div class="card-body p-0">
                     <div class="row no-gutters mt-4">
                         <div class="col-lg-6 d-none d-lg-inline-block">
-                            <div class="account-block rounded-right p-3" style="background-image: url('{{ asset('storage/'.$setting->login_image ?? "https://cdn.pixabay.com/photo/2015/03/03/08/55/portrait-657116_960_720.jpg" ) }}')">
+                            <div class="account-block rounded-right p-3"
+
+                            @if(!empty($setting->login_image))
+                                style="background-image: url('{{ asset('storage/'.($setting->login_image ?? "https://cdn.pixabay.com/photo/2015/03/03/08/55/portrait-657116_960_720.jpg") ) }}')"
+
+                            @else
+                                 style="background-image: url('https://cdn.pixabay.com/photo/2015/03/03/08/55/portrait-657116_960_720.jpg')"
+
+                                @endif
+                            >
                                 <div class="overlay rounded-right"></div>
                                 <div class="account-testimonial">
                                     <h4 class="text-white mb-4">{{$setting->title ?? "You're on the best place for meeting new people nearby!

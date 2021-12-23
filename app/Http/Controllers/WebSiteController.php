@@ -21,9 +21,11 @@ class WebSiteController extends Controller
 
         $img = MetaSettings::find(1)->background_image ?? "";
 
-        $imagePath = public_path('storage/'.$img);
-        if(File::exists($imagePath)){
-            unlink($imagePath);
+        if (!empty($img)){
+            $imagePath = public_path('storage/'.$img);
+            if(File::exists($imagePath)){
+                unlink($imagePath);
+            }
         }
 
         MetaSettings::updateOrCreate(
@@ -38,10 +40,14 @@ class WebSiteController extends Controller
 
         $img = MetaSettings::find(1)->login_image ?? "";
 
-        $imagePath = public_path('storage/'.$img);
-        if(File::exists($imagePath)){
-            unlink($imagePath);
+        if (!empty($img)){
+            $imagePath = public_path('storage/'.$img);
+            if(File::exists($imagePath)){
+                unlink($imagePath);
+            }
+
         }
+
 
         MetaSettings::updateOrCreate(
             ['id' =>  1],

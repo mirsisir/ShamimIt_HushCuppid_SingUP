@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $setting = \App\Models\MetaSettings::find(1);
+
     return view('welcome',compact('setting'));
 });
 Route::get('/dashboard',[WebSiteController::class, 'dashboard'])->name('dashboard')->middleware(['auth']);

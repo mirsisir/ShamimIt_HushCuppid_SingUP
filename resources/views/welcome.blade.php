@@ -16,31 +16,45 @@
 
 </head>
 
-<body class="bg-light">
+<body class="bg-light"
+      @if(!empty($setting->background_image ?? ""))
+      style="background-image: url('{{ asset('storage/'.($setting->background_image ?? "https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg") ) }}')" >
+@else
+    style="background-image: url('https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg') ">
 
+@endif
 <div class="">
     <div class="container ">
         <img src="https://www.hushcupid.com/templates/themes/base/img/logo.png" alt="s" width="70px">
-        <span class="h3 m-3 text-purple">Hush Cupid</span>
-        <a href="#" class="float-end btn btn-theme mt-3">Login</a>
+        <span class="h3 m-3 text-purple">{{$setting->website_name ?? "Hush Cupid"}}</span>
+
+        <a href="https://www.hushcupid.com/" class="float-end btn btn-theme mt-3">Login</a>
 
     </div>
 </div>
 
 <div id="main-wrapper" class="container">
-
     <div class="row justify-content-center">
         <div class="col-xl-10">
             <div class="card border-0">
                 <div class="card-body p-0">
                     <div class="row no-gutters mt-4">
                         <div class="col-lg-6 d-none d-lg-inline-block">
-                            <div class="account-block rounded-right p-3">
+                            <div class="account-block rounded-right p-3"
+
+                            @if(!empty($setting->login_image ?? ""))
+                                style="background-image: url('{{ asset('storage/'.($setting->login_image ?? "https://cdn.pixabay.com/photo/2015/03/03/08/55/portrait-657116_960_720.jpg") ) }}')"
+
+                            @else
+                                 style="background-image: url('https://cdn.pixabay.com/photo/2015/03/03/08/55/portrait-657116_960_720.jpg')"
+
+                                @endif
+                            >
                                 <div class="overlay rounded-right"></div>
                                 <div class="account-testimonial">
-                                    <h4 class="text-white mb-4">You're on the best place for meeting new people nearby!
-                                        Chat, Flirt, Socialize and have Fun!</h4>
-                                    <p class="lead text-white">"Meet amazing people nearby Waiting for you...!"</p>
+                                    <h4 class="text-white mb-4">{{$setting->title ?? "You're on the best place for meeting new people nearby!
+                                        Chat, Flirt, Socialize and have Fun!"}}</h4>
+                                    <p class="lead text-white">"{{$setting->sub_title ?? "Meet amazing people nearby Waiting for you...!"}}"</p>
                                 </div>
                             </div>
                         </div>
@@ -48,7 +62,7 @@
                         <div class="col-lg-6">
                             <div class="p-5">
                                 <div class="mb-3">
-                                    <h6 class="h5 mb-0 text-center">hush cupid!</h6>
+                                    <h6 class="h5 mb-0 text-center">{{$setting->website_name ?? "Hush Cupid"}}</h6>
 
                                     <h3 class="h4 font-weight-bold text-theme text-center">SingUp</h3>
                                 </div>
@@ -144,8 +158,7 @@
             </div>
             <!-- end card -->
 
-            <p class="text-muted text-center mt-3 mb-0">Don't have an account? <a href="register.html"
-                                                                                  class="text-primary ml-1">register</a>
+
             </p>
 
             <!-- end row -->

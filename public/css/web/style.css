@@ -6,10 +6,6 @@ body{
     /*overflow: hidden;*/
 
 }
-input[type=text]:focus {
-    background-color: yellow;
-    color: black;
-}
 .account-block {
     padding: 0;
     background-image: url(https://cdn.pixabay.com/photo/2015/03/03/08/55/portrait-657116_960_720.jpg);

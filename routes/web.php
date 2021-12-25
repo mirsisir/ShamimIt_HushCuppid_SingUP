@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\SingUpController;
 use App\Http\Controllers\WebSiteController;
+use App\Http\Controllers\MemberController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,13 +16,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
+});
+Route::get('/', function () {
+    return view('welcome2');
 });
 Route::get('/dashboard',[WebSiteController::class, 'dashboard'])->name('dashboard')->middleware(['auth']);
 Route::post('/background',[WebSiteController::class, 'background'])->name('background')->middleware(['auth']);
-
-
+Route::resource('members', MemberController::class);
 
 require __DIR__.'/auth.php';
 

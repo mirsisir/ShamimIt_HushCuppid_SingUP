@@ -1,6 +1,7 @@
 body{
     margin-top:20px;
-    /*background-image: url($setting->background ?? "https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg");*/
+    /* background-image: url($setting->background ?? "https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg"); */
+    background-image: url("/../images/bg_body.jpg");
     background-size: cover;
     background-position: center center;
     /*overflow: hidden;*/

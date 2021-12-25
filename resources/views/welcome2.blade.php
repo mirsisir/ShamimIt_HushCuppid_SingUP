@@ -49,21 +49,10 @@
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
 	<link href="{{asset('css/themify-icons.css')}}" rel="stylesheet">
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-NKDMSK6');</script>
-	<!-- End Google Tag Manager -->
+	
 	</head>
 
 	<body>
-	<!-- Google Tag Manager (noscript) -->
-	<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
-	<!-- End Google Tag Manager (noscript) -->
-
     <nav class="navbar">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -77,7 +66,7 @@
                 <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><button type="button" class="btn btn-primary">LOGIN</button></li>
+                <li><a href="https://hushcupid.com/login" type="button" class="btn btn-primary">LOGIN</a></li>
             </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -116,12 +105,9 @@
                                         <p class="category">This information will let us know more about you.</p>
                                         @if ($errors->any())
                                         <div class="alert alert-danger">
-                                            <strong>Whoops!</strong> There were some problems with your input.<br><br>
-                                            <ul>
-                                                @foreach ($errors->all() as $error)
-                                                <li>{{ $error }}</li>
-                                                @endforeach
-                                            </ul>
+                                            @foreach ($errors->all() as $error)
+                                                <p>{{ $error }}</p>
+                                            @endforeach
                                         </div>
                                         @endif
 
@@ -343,7 +329,6 @@
 	<script src="{{asset('js/jquery.bootstrap.wizard.js')}}" type="text/javascript"></script>
 
 	<!--  Plugin for the Wizard -->
-	<script src="{{asset('js/demo.js')}}" type="text/javascript"></script>
 	<script src="{{asset('js/paper-bootstrap-wizard.js')}}" type="text/javascript"></script>
 
 	<!--  More information about jquery.validate here: https://jqueryvalidation.org/	 -->

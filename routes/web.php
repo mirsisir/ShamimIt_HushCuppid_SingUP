@@ -16,13 +16,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/old', function () {
     $setting = \App\Models\MetaSettings::find(1);
 
     return view('welcome',compact('setting'));
 });
 Route::get('/', function () {
-    return view('welcome2');
+    $setting = \App\Models\MetaSettings::find(1);
+
+    return view('welcome2',compact('setting'));
 });
 Route::get('/dashboard',[WebSiteController::class, 'dashboard'])->name('dashboard')->middleware(['auth']);
 Route::post('/background',[WebSiteController::class, 'background'])->name('background')->middleware(['auth']);

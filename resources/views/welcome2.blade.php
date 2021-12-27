@@ -49,15 +49,22 @@
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
 	<link href="{{asset('css/themify-icons.css')}}" rel="stylesheet">
-	
+
 	</head>
 
-	<body>
+<body class="bg-light"
+      @if(!empty($setting->background_image ?? ""))
+      style="background-image: url('{{ asset('storage/'.($setting->background_image ?? "https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg") ) }}')" >
+@else
+    style="background-image: url('https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg') ">
+
+@endif
+
     <nav class="navbar">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="/">HushCupid</a>
+                <a class="navbar-brand" href="/">{{$setting->website_name ?? "Hush Cupid"}}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -77,7 +84,7 @@
 		<!--  Made With HushCupid  -->
 		<a href="https://hushcupid.com/" class="made-with-pk">
 			<div class="brand">HC</div>
-			<div class="made-with">Made By <strong>HushCupid</strong></div>
+			<div class="made-with">Made By <strong>{{$setting->website_name ?? "Hush Cupid"}}</strong></div>
 		</a>
 
 	    <!--   Big container   -->
@@ -86,13 +93,23 @@
 		        <div class="col-md-10 col-md-offset-1">
 		            <!--      Wizard container        -->
 		            <div class="row wizard-container">
-                        <div class="col-md-5 text-blockl card" style="background-image: url(https://cdn.pixabay.com/photo/2015/03/03/08/55/portrait-657116_960_720.jpg)">
+                        <div class="col-md-5 text-blockl card"
+                             @if(!empty($setting->login_image ?? ""))
+                             style="background-image: url('{{ asset('storage/'.($setting->login_image ?? "https://cdn.pixabay.com/photo/2015/03/03/08/55/portrait-657116_960_720.jpg") ) }}')"
+
+                             @else
+                             style="background-image: url('https://cdn.pixabay.com/photo/2015/03/03/08/55/portrait-657116_960_720.jpg')"
+
+                            @endif
+                        >
+
+
                             <div class="rounded-right p-3" style="padding-top: 300px; text-align: center; color: white;">
                                 <div class="overlay rounded-right"></div>
                                 <div class="account-testimonial" style="padding: 30px;">
-                                    <h4 class="text-white mb-4">You're on the best place for meeting new people nearby!
-                                        Chat, Flirt, Socialize and have Fun!</h4>
-                                    <p class="lead text-white">"Meet amazing people nearby Waiting for you...!"</p>
+                                    <h4 class="text-white mb-4">{{$setting->title ?? "You're on the best place for meeting new people nearby!
+                                        Chat, Flirt, Socialize and have Fun!"}}</h4>
+                                    <p class="lead text-white">{{$setting->sub_title ?? "Meet amazing people nearby Waiting for you...!"}}</p>
                                 </div>
                             </div>
                         </div>

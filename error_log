@@ -1,0 +1,70 @@
+[25-Dec-2021 08:01:55 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Illuminate\Log\Logger::__construct() must be an instance of Psr\Log\LoggerInterface, instance of Monolog\Logger given, called in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php on line 189 and defined in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php:43
+Stack trace:
+#0 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(189): Illuminate\Log\Logger->__construct(Object(Monolog\Logger), Object(Illuminate\Events\Dispatcher))
+#1 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(136): Illuminate\Log\LogManager->createEmergencyLogger()
+#2 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(111): Illuminate\Log\LogManager->get('stack')
+#3 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(583): Illuminate\Log\LogManager->driver()
+#4 /home/ in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php on line 43
+[25-Dec-2021 08:01:55 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Illuminate\Log\Logger::__construct() must be an instance of Psr\Log\LoggerInterface, instance of Monolog\Logger given, called in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php on line 189 and defined in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php:43
+Stack trace:
+#0 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(189): Illuminate\Log\Logger->__construct(Object(Monolog\Logger), Object(Illuminate\Events\Dispatcher))
+#1 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(136): Illuminate\Log\LogManager->createEmergencyLogger()
+#2 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(111): Illuminate\Log\LogManager->get('stack')
+#3 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(583): Illuminate\Log\LogManager->driver()
+#4 /home/ in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php on line 43
+[25-Dec-2021 08:04:26 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Illuminate\Log\Logger::__construct() must be an instance of Psr\Log\LoggerInterface, instance of Monolog\Logger given, called in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php on line 189 and defined in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php:43
+Stack trace:
+#0 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(189): Illuminate\Log\Logger->__construct(Object(Monolog\Logger), Object(Illuminate\Events\Dispatcher))
+#1 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(136): Illuminate\Log\LogManager->createEmergencyLogger()
+#2 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(111): Illuminate\Log\LogManager->get('stack')
+#3 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(583): Illuminate\Log\LogManager->driver()
+#4 /home/ in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php on line 43
+[25-Dec-2021 08:04:26 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Illuminate\Log\Logger::__construct() must be an instance of Psr\Log\LoggerInterface, instance of Monolog\Logger given, called in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php on line 189 and defined in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php:43
+Stack trace:
+#0 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(189): Illuminate\Log\Logger->__construct(Object(Monolog\Logger), Object(Illuminate\Events\Dispatcher))
+#1 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(136): Illuminate\Log\LogManager->createEmergencyLogger()
+#2 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(111): Illuminate\Log\LogManager->get('stack')
+#3 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(583): Illuminate\Log\LogManager->driver()
+#4 /home/ in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php on line 43
+[25-Dec-2021 08:04:43 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Illuminate\Log\Logger::__construct() must be an instance of Psr\Log\LoggerInterface, instance of Monolog\Logger given, called in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php on line 189 and defined in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php:43
+Stack trace:
+#0 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(189): Illuminate\Log\Logger->__construct(Object(Monolog\Logger), Object(Illuminate\Events\Dispatcher))
+#1 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(136): Illuminate\Log\LogManager->createEmergencyLogger()
+#2 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(111): Illuminate\Log\LogManager->get('stack')
+#3 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(583): Illuminate\Log\LogManager->driver()
+#4 /home/ in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php on line 43
+[25-Dec-2021 08:04:43 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Illuminate\Log\Logger::__construct() must be an instance of Psr\Log\LoggerInterface, instance of Monolog\Logger given, called in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php on line 189 and defined in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php:43
+Stack trace:
+#0 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(189): Illuminate\Log\Logger->__construct(Object(Monolog\Logger), Object(Illuminate\Events\Dispatcher))
+#1 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(136): Illuminate\Log\LogManager->createEmergencyLogger()
+#2 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(111): Illuminate\Log\LogManager->get('stack')
+#3 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(583): Illuminate\Log\LogManager->driver()
+#4 /home/ in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php on line 43
+[25-Dec-2021 08:05:38 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Illuminate\Log\Logger::__construct() must be an instance of Psr\Log\LoggerInterface, instance of Monolog\Logger given, called in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php on line 189 and defined in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php:43
+Stack trace:
+#0 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(189): Illuminate\Log\Logger->__construct(Object(Monolog\Logger), Object(Illuminate\Events\Dispatcher))
+#1 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(136): Illuminate\Log\LogManager->createEmergencyLogger()
+#2 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(111): Illuminate\Log\LogManager->get('stack')
+#3 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(583): Illuminate\Log\LogManager->driver()
+#4 /home/ in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php on line 43
+[25-Dec-2021 08:05:38 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Illuminate\Log\Logger::__construct() must be an instance of Psr\Log\LoggerInterface, instance of Monolog\Logger given, called in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php on line 189 and defined in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php:43
+Stack trace:
+#0 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(189): Illuminate\Log\Logger->__construct(Object(Monolog\Logger), Object(Illuminate\Events\Dispatcher))
+#1 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(136): Illuminate\Log\LogManager->createEmergencyLogger()
+#2 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(111): Illuminate\Log\LogManager->get('stack')
+#3 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(583): Illuminate\Log\LogManager->driver()
+#4 /home/ in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php on line 43
+[25-Dec-2021 08:05:44 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Illuminate\Log\Logger::__construct() must be an instance of Psr\Log\LoggerInterface, instance of Monolog\Logger given, called in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php on line 189 and defined in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php:43
+Stack trace:
+#0 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(189): Illuminate\Log\Logger->__construct(Object(Monolog\Logger), Object(Illuminate\Events\Dispatcher))
+#1 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(136): Illuminate\Log\LogManager->createEmergencyLogger()
+#2 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(111): Illuminate\Log\LogManager->get('stack')
+#3 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(583): Illuminate\Log\LogManager->driver()
+#4 /home/ in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php on line 43
+[25-Dec-2021 08:05:44 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Illuminate\Log\Logger::__construct() must be an instance of Psr\Log\LoggerInterface, instance of Monolog\Logger given, called in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php on line 189 and defined in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php:43
+Stack trace:
+#0 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(189): Illuminate\Log\Logger->__construct(Object(Monolog\Logger), Object(Illuminate\Events\Dispatcher))
+#1 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(136): Illuminate\Log\LogManager->createEmergencyLogger()
+#2 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(111): Illuminate\Log\LogManager->get('stack')
+#3 /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(583): Illuminate\Log\LogManager->driver()
+#4 /home/ in /home/matchurl2/loneelymeet.com/vendor/laravel/framework/src/Illuminate/Log/Logger.php on line 43

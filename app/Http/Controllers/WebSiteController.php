@@ -71,4 +71,10 @@ class WebSiteController extends Controller
     }
 
 
+    public function register_successfully(){
+
+        return view('register_successfully');
+    }
+
+
 }

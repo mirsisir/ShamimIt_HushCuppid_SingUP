@@ -31,6 +31,7 @@ Route::post('/background',[WebSiteController::class, 'background'])->name('backg
 Route::resource('members', MemberController::class);
 Route::post('/login_image',[WebSiteController::class, 'login_image'])->name('login_image')->middleware(['auth']);
 Route::post('/gen_settings',[WebSiteController::class, 'gen_settings'])->name('gen_settings')->middleware(['auth']);
+Route::get('/register_successfully',[WebSiteController::class, 'register_successfully'])->name('register_successfully');
 
 require __DIR__.'/auth.php';
 

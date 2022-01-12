@@ -101,8 +101,8 @@ class MemberController extends Controller
             'friendRequest' => 1
         ]);
         
-        return redirect('/')
-        ->with('success','Account created successfully.');
+              return redirect(route('register_successfully'))->with('success','Account created successfully. ');
+
     }
 
     /**

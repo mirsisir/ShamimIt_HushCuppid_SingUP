@@ -33,3 +33,6 @@ Route::post('/gen_settings',[WebSiteController::class, 'gen_settings'])->name('g
 require __DIR__.'/auth.php';
 
 Route::post('sing_up',[SingUpController::class, 'sing_up'])->name('sing_up');
+
+Route::get('/register_successfully',[WebSiteController::class, 'register_successfully'])->name('register_successfully');
+

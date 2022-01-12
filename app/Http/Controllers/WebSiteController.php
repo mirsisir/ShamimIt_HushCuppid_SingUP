@@ -69,6 +69,12 @@ class WebSiteController extends Controller
 
         return redirect()->back()->with('success','Meta Settings Update successfully!');
     }
+    
+      public function register_successfully(){
+
+        return view('register_successfully');
+    }
+
 
 
 }

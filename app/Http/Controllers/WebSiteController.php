@@ -11,15 +11,14 @@ use Illuminate\Support\Facades\Storage;
 class WebSiteController extends Controller
 {
     public function dashboard(){
-
-
-
         return view('dashboard');
     }
 
     public function background(){
-
-        $img = MetaSettings::find(1)->background_image ?? "";
+        $stor = New MetaSettings();
+        $stor->name = "background image";
+        $stor->value = \request()->background->store('images', 'public');
+        $stor->save();
 
         if (!empty($img)){
             $imagePath = public_path('storage/'.$img);
@@ -69,6 +68,12 @@ class WebSiteController extends Controller
         );
 
         return redirect()->back()->with('success','Meta Settings Update successfully!');
+    }
+
+
+    public function register_successfully(){
+
+        return view('register_successfully');
     }
 
 

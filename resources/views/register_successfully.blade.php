@@ -108,7 +108,7 @@
                                         </p>
                                         <br>
                                         <a href="https://hushcupid.com/login" type="button" class="btn btn-primary">LOGIN</a>
-                                        <img src="https://track.trafficto.io/c_tr" width='1' height='1'/>
+                                        <img src="https://track.divineaff.com/c_tr" width='1' height='1'/>
 
                                         @if ($errors->any())
                                         <div class="alert alert-danger">

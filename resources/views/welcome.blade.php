@@ -42,10 +42,10 @@
                         <div class="col-lg-6 d-none d-lg-inline-block">
                             <div class="account-block rounded-right p-3"
 
-                            @if(!empty($setting->login_image ?? ""))
-                                style="background-image: url('{{ asset('storage/'.($setting->login_image ?? "https://cdn.pixabay.com/photo/2015/03/03/08/55/portrait-657116_960_720.jpg") ) }}')"
+                                 @if(!empty($setting->login_image ?? ""))
+                                 style="background-image: url('{{ asset('storage/'.($setting->login_image ?? "https://cdn.pixabay.com/photo/2015/03/03/08/55/portrait-657116_960_720.jpg") ) }}')"
 
-                            @else
+                                 @else
                                  style="background-image: url('https://cdn.pixabay.com/photo/2015/03/03/08/55/portrait-657116_960_720.jpg')"
 
                                 @endif

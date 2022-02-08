@@ -22,11 +22,13 @@
             <div id="step-2" >
                 <span>* I am a</span> <br>
 
-                <label><input type="radio" name="gender" value="male" required>Male</label>
+                <span class="m-0 p-0 justify-between">
+                    <label><input type="radio" name="gender" value="male" required>Male</label>
 
-                <label><input type="radio" name="gender" value="female">Female</label>
+                    <label><input type="radio" name="gender" value="female">Female</label>
 
-                <label><input type="radio" name="gender" value="other">Couple</label>
+                    <label><input type="radio" name="gender" value="other">Couple</label>
+                </span>
                 <br>
                 <span>* Looking for a</span>
                 <br>
@@ -62,15 +64,13 @@
                         <input type="text" required  name="PostCode" id="PostCode" class="form-control">
                     </div>
                 </div>
-{{--                <p>* About Me</p>--}}
-{{--                <textarea name="about_me"  required id="about_me" cols="40" rows="5"></textarea>--}}
+                <p>* About Me</p>
+                <textarea name="about_me"  required id="about_me" cols="40" rows="2"></textarea>
                 <br>
-                <p>* Upload A Photo</p>
-                <input type="file" name="photo" id="photo"  required >
+
 
                 <br>
-                <input type="submit" value="SingUp"
-                       class="float-end btn btn-lg btn-info ">
+                <input type="submit" value="SingUp" wire:click="SingUp" class="float-end btn btn-lg btn-info " >
             </div>
 
             @endif

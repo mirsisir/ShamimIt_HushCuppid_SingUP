@@ -16,7 +16,8 @@
     @livewireStyles
 </head>
 
-<body >
+<body  >
+
 <div class="fixed-top bg-light">
     <div class="container ">
         <img src="https://www.hushcupid.com/templates/themes/base/img/logo.png" alt="s" width="70px" >

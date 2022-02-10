@@ -16,11 +16,66 @@
     @livewireStyles
 </head>
 
-<body  >
-<div class="wrapper">
-    @livewire('singup-component')
+@if($setting->background_image)
+    <body
+        style="background-image: url('{{ asset('storage/'.($setting->background_image ?? "https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg") ) }}')">
+    @else
+        <body style="background-image: url(https://cdn.pixabay.com/photo/2017/11/12/22/50/human-2944064_960_720.jpg);">
+        @endif
+        <div class="wrapper">
 
-</div>
-@livewireScripts
-</body>
+            <div id="main-wrapper" class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="card border-0" style="    margin-top: 3.5rem!important;">
+                            <div class="card-body p-0">
+                                <div class="row no-gutters mt-4">
+                                    <div class="col-lg-6">
+                                        <div class="py-3 ps-3">
+                                            <div class="p-2">
+                                                <div class="">
+                                                    <h6 class="h5 mb-0">hush cupid!</h6>
+
+                                                    <h3 class="h4 font-weight-bold text-theme">SingUp</h3>
+                                                </div>
+
+                                                @livewire('singup-component')
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 d-none d-lg-inline-block">
+
+                                            @if($setting->login_image)
+                                            <div class="account-block rounded-right p-3"
+                                                style="background-image: url('{{ asset('storage/'.($setting->login_image ?? "https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg") ) }}')">
+                                            @else
+                                                <div class="account-block rounded-right p-3"
+                                                     style="background-image: url(https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_960_720.jpg);">
+                                            @endif
+
+
+
+                                                    <div class="overlay rounded-right"></div>
+                                                    <div class="account-testimonial">
+                                                        <h4 class="text-white mb-4">You're on the best place for meeting
+                                                            new people nearby! Chat, Flirt, Socialize and have Fun!</h4>
+                                                        <p class="lead text-white">"Meet amazing people nearby Waiting
+                                                            for you...!"</p>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        @livewireScripts
+        </body>
 </html>

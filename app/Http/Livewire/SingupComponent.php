@@ -28,7 +28,7 @@ class SingupComponent extends Component
     private $ip;
 
     public function mount(Request $request){
-        $this->id = $request->ip();
+        $this->id = $request->ip() ?? "127.0.0.1";
         $this->setting = \App\Models\MetaSettings::find(1);
     }
 
@@ -41,14 +41,18 @@ class SingupComponent extends Component
 
         ],
         2 => [
-            'password' => ['required', 'string', 'min:8'],
+            'city' => ['required', 'string'],
+            'country' => ['required', 'string'],
+            'birth_day' => ['required'],
+            'looking' => ['required'],
         ],
     ];
 
 
     public function increment(){
+
         $this->validate($this->validationRules[$this->page]);
-        $this->page++;
+        $this->page = 2;
     }
 
     public static function hashPwd($sPassword)
@@ -58,7 +62,7 @@ class SingupComponent extends Component
 
     public function SingUp()
     {
-
+        $this->validate($this->validationRules[$this->page]);
 
         $sPassword = $this->password;
         $password = $this->hashPwd($sPassword);

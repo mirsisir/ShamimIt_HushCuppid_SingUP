@@ -17,44 +17,9 @@
 </head>
 
 <body  >
+<div class="wrapper">
+    @livewire('singup-component')
 
-<div class="fixed-top bg-light">
-    <div class="container ">
-        <img src="https://www.hushcupid.com/templates/themes/base/img/logo.png" alt="s" width="70px" >
-        <span class="h3 m-3 text-purple">Hush Cupid</span>
-        <a href="#" class="float-end btn  mt-3"  >Login</a>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-6 col-sm-12">
-        <div class="container m-auto p-4" >
-
-            <div class="form  p-4 bg-light    rounded-2" style="margin: 7vw">
-                <div class="mb-3">
-                    <h6 class="h5 mb-0">hush cupid!</h6>
-
-                    <h3 class="h4 font-weight-bold text-center">SingUp</h3>
-                </div>
-                @livewire('singup-component')
-
-
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-6 col-sm-12">
-        <div class="image p-4" >
-            <div class="p-4">
-                <div class="p-4   text-white bg-light " style="margin-top: 150px;">
-
-                    <h2 class="text-purple">Meet amazing people nearby Waiting for you...! 🎉</h2>
-                    <span class="text-purple">You're on the best place for meeting new people nearby! Chat, Flirt, Socialize and have Fun!</span>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 @livewireScripts
 </body>

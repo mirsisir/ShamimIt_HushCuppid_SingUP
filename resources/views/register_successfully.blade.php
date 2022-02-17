@@ -38,33 +38,29 @@
     <meta property="og:site_name" content="HushCupid" />
 
 	<!-- CSS Files -->
-    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />
-    <link rel="stylesheet" href="{{asset('css/web/style.css')}}">
-	<link href="{{asset('css/paper-bootstrap-wizard.css')}}" rel="stylesheet" />
+    <link href="http://damndate.com/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://damndate.com/css/web/style.css">
+	<link href="http://damndate.com/css/paper-bootstrap-wizard.css" rel="stylesheet" />
 
 	<!-- CSS Just for demo purpose, don't include it in your project -->
-	<link href="{{asset('css/demo.css')}}" rel="stylesheet" />
+	<link href="http://damndate.com/css/demo.css" rel="stylesheet" />
 
 	<!-- Fonts and Icons -->
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
-	<link href="{{asset('css/themify-icons.css')}}" rel="stylesheet">
+	<link href="http://damndate.com/css/themify-icons.css" rel="stylesheet">
 
 	</head>
 
 <body class="bg-light"
-      @if(!empty($setting->background_image ?? ""))
-      style="background-image: url('{{ asset('storage/'.($setting->background_image ?? "https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg") ) }}')" >
-@else
-    style="background-image: url('https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg') ">
+          style="background-image: url('https://cdn.pixabay.com/photo/2016/07/12/11/44/face-1511873_960_720.jpg') ">
 
-@endif
 
     <nav class="navbar">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="/">{{$setting->website_name ?? "Hush Cupid"}}</a>
+                <a class="navbar-brand" href="/">Hush Cupid</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -84,7 +80,7 @@
 		<!--  Made With HushCupid  -->
 		<a href="https://hushcupid.com/" class="made-with-pk">
 			<div class="brand">HC</div>
-			<div class="made-with">Made By <strong>{{$setting->website_name ?? "Hush Cupid"}}</strong></div>
+			<div class="made-with">Made By <strong>Hush Cupid</strong></div>
 		</a>
 
 	    <!--   Big container   -->
@@ -97,8 +93,7 @@
                         <div class="col-md-7 m-auto" style="padding: 0 !important;">
                             <div class="card wizard-card" data-color="orange" id="wizardProfile">
                                 <form method="post" class="p-2">
-                                    @csrf
-                                    <div class="wizard-header text-center">
+                                    <input type="hidden" name="_token" value="T6GVhGq6fEr6bzDjmZ4bECwE1nM9h6FPBq6C3Qzk">                                    <div class="wizard-header text-center">
                                         <br>
                                         <h2 class="wizard-title ">Registration successfully completed!</h2>
                                         <br>
@@ -110,20 +105,8 @@
                                         <a href="https://hushcupid.com/login" type="button" class="btn btn-primary">LOGIN</a>
                                         <img src="https://track.divineaff.com/c_tr" width='1' height='1'/>
 
-                                        @if ($errors->any())
-                                        <div class="alert alert-danger">
-                                            @foreach ($errors->all() as $error)
-                                                <p>{{ $error }}</p>
-                                            @endforeach
-                                        </div>
-                                        @endif
-
-                                        @if ($message = Session::get('success'))
-                                        <div class="alert alert-success">
-                                            <p>{{ $message }}</p>
-                                        </div>
-                                        @endif
-                                    </div>
+                                        
+                                                                            </div>
 
 
                                 </form>
@@ -140,14 +123,14 @@
 </body>
 
 	<!--   Core JS Files   -->
-	<script src="{{asset('js/jquery-2.2.4.min.js')}}" type="text/javascript"></script>
-	<script src="{{asset('js/bootstrap.min.js')}}" type="text/javascript"></script>
-	<script src="{{asset('js/jquery.bootstrap.wizard.js')}}" type="text/javascript"></script>
+	<script src="http://damndate.com/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="http://damndate.com/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="http://damndate.com/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
 
 	<!--  Plugin for the Wizard -->
-	<script src="{{asset('js/paper-bootstrap-wizard.js')}}" type="text/javascript"></script>
+	<script src="http://damndate.com/js/paper-bootstrap-wizard.js" type="text/javascript"></script>
 
 	<!--  More information about jquery.validate here: https://jqueryvalidation.org/	 -->
-	<script src="{{asset('js/jquery.validate.min.js')}}" type="text/javascript"></script>
+	<script src="http://damndate.com/js/jquery.validate.min.js" type="text/javascript"></script>
 
 </html>

@@ -28,7 +28,7 @@ class SingupComponent extends Component
     private $ip;
 
     public function mount(Request $request){
-        $this->id = $request->ip();
+       $this->id = $request->ip() ?? "127.0.0.1";
         $this->setting = \App\Models\MetaSettings::find(1);
     }
 
@@ -71,7 +71,7 @@ class SingupComponent extends Component
             'password' => $password,
             'firstName' => $this->name,
             'reference' => "LoneelyMeet.com",
-            'ip' => $this->ip,
+            'ip' => "127.0.0.1",
             'hashValidation' => Hash::make($sPassword),
             'joinDate' => $current_date,
             'active' => 1,
